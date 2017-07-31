@@ -27,11 +27,11 @@
  *
  */
 
-let node1 = new Node('1');
-let node2 = node1.next = new Node('2');
-let node3 = node2.next = new Node('3');
-let node4 = node3.next = new Node('4');
-let node5 = node4.next = new Node('5');
+// let node1 = new Node('1');
+// let node2 = node1.next = new Node('2');
+// let node3 = node2.next = new Node('3');
+// let node4 = node3.next = new Node('4');
+// let node5 = node4.next = new Node('5');
 // node5.next = node2;
 
 function Node (value) {
