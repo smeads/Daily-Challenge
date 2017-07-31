@@ -5,10 +5,10 @@ require('babel-register')({
 const expect = require('expect');
 const challenges = require ('../challenges');
 
-// test for sumAllRange
+// test for sum-all-range
 describe('sumAll', () => {
   it ('should return the sum of the range of input array', () => {
-    const sumAll = challenges.sumAllRange;
+    const sumAll = challenges.sumAll;
 
     expect(sumAll([1, 4]).toEqual(Number));
     expect(sumAll([1, 4]).toEqual(10));
@@ -17,3 +17,5 @@ describe('sumAll', () => {
     expect(sumAll([10, 5]).toEqual(10));
   })
 });
+
+// test for linked-list-cycles
