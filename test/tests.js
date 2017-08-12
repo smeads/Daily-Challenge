@@ -46,3 +46,19 @@ describe('uniqueNumber', () => {
     expect(uniqueNumber([1, 4]).toEqual(console.log([1, 4])));
   })
 });
+
+// Test for circle country
+describe('circleCountry', () => {
+  it ('should return the minimum number of borders crossed', () => {
+    const circleCountry = require ('../challenges/circleCountry');
+    const X = [-1, 0, 0, 4];
+    const Y = [0, 0, 0, 4];
+    const R = [1, 3, 6, 0.1];
+    const START_X = 1;
+    const START_Y = 0;
+    const END_X = 4;
+    const END_Y = 4;
+
+    expect(circleCountry(X, Y, R, START_X, START_Y, END_X, END_Y).toEqual(console.log(2));
+  })
+});
