@@ -34,7 +34,18 @@
 */
 
 function nextBigger(integer) {
+  const string = integer.toString();
+  const array = string.split('');
 
+  for (let i = array.length - 1; i > 0; i--) {
+    if (parseInt(array[i]) > parseInt(array[i - 1])) {
+      const temp = array[i];
+      array[i] = array[i - 1];
+      array[i -1] = temp;
+      const newString = array.join('');
+      return parseInt(newString);    }
+  }
+  return -1;
 }
 
-console.log(nextBigger(1120));
+console.log(nextBigger(273));
